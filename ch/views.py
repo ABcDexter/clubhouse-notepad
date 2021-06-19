@@ -7,7 +7,7 @@ from django.forms.models import model_to_dict
 
 from .utils import HttpJSONError, CHException, DummyException, HttpJSONResponse, HttpRecordsResponse, log
 from .utils import handleException, extractParams
-from .utils import headers, encode
+from .utils import headers, encode, decode
 
 from url_magic import makeView
 
@@ -47,6 +47,6 @@ def adminGenUrl(_, dct):
     -----------------------------------------
 
     """
-    sURL = encode(str(dct['url']), settings.BASE62)
+    sURL = decode(str(dct['url']), settings.BASE62)
     ret = {'nurl': sURL}
     return HttpJSONResponse(ret)

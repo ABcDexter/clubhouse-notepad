@@ -26,7 +26,7 @@ SECRET_KEY = '866969960513101422256805776754896171817934665224119533514815274537
 # NOTE : If this is turned False, then the static files won't work!!
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "anubhav.club", "18.118.68.232",
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "anubhav.club", "api.anubhav.club", "34.93.43.137",
                  "3141592655835.ngrok.io"]  # ngrok http http://127.0.0.1:9999 on the server
 
 BASE62 = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
