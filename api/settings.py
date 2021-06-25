@@ -32,6 +32,10 @@ ALLOWED_HOSTS = ["127.0.0.1", "localhost", "anubhav.club", "api.anubhav.club", "
 BASE62 = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 LOG_DIR = '/srv/data/logs/'
 
+#
+# Fixes
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+
 # Application definition
 
 INSTALLED_APPS = [

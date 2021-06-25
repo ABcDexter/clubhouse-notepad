@@ -63,7 +63,7 @@ class Post(models.Model):
     -----------------------------------------
     """
     txt = models.CharField(max_length=256, default='')
-    pid = models.IntegerField(max_length=16, default=0, db_index=True)
+    pid = models.IntegerField(default=0, db_index=True)
     ctime = models.DateTimeField(auto_now=True)
 
     class Meta:
