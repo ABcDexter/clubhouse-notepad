@@ -9,8 +9,8 @@ class Admin(models.Model):
     -----------------------------------------
     """
     auth = models.CharField(max_length=16, primary_key=True)
-    name = models.CharField(max_length=16, null=True)
-    email = models.CharField(max_length=16, default='', db_index=True)
+    name = models.CharField(max_length=64, null=True)
+    email = models.CharField(max_length=64, default='', db_index=True)
 
     class Meta:
         db_table = 'admin'
@@ -25,7 +25,7 @@ class User(models.Model):
     -----------------------------------------
     """
     auth = models.CharField(max_length=16, primary_key=True)
-    name = models.CharField(max_length=16, null=True, db_index=True)
+    name = models.CharField(max_length=32, null=True, db_index=True)
 
     class Meta:
         db_table = 'user'
